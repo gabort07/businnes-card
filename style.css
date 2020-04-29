@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('https://i.imgur.com/PSkZMQV.jpg') no-repeat center fixed;
+  background-size: cover;
+  font-family: 'Lato', sans-serif;
+  color: antiquewhite;
+  letter-spacing: 1.5px;
+}
+
+a {
+  color: bisque;
+}
+
+.canvas {
+  display: table;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.card-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 1.5rem;
+}
+
+/*=== IMAGE ===*/
+
+.profilepic {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+
+  .profilepic {
+    display: inline-block;
+    width: 30%;
+  }
+
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  clip-path: circle(56%);
+  filter: grayscale(60%);
+}
+
+img:hover {
+  clip-path: circle(70%);
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(10%);
+}
+
+/*=== NAME BLOCK ===*/
+
+.date-wrapper {
+  width: 90%;
+  padding: .5rem;
+  margin: 1rem auto;
+  font-size: 1.125rem;
+  background: rgba(0, 0, 0, .6);
+  border: solid 1px white;
+  border-radius: 25px;
+}
+
+@media (min-width: 682px) {
+
+  .date-wrapper {
+    display: inline-block;
+    width: 40%;
+  }
+}
+
+h1,
+h2 {
+  margin-bottom: .5rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+.date-wrapper p {
+  font-size: .9rem;
+  margin: .5rem;
+}
+
+.date-wrapper a {
+  color: #0c9115;
+  margin-right: .5rem;
+}
+
+/*=== ABOUT ===*/
+
+.about-wrapper {
+  font-family: 'Nunit', sans-serif;
+  width: 100%;
+  line-height: 1.2rem;
+  padding: .5rem;
+  margin: 1rem auto;
+  border: solid 1px white;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, .7);
+}
+
+@media (min-width: 682px) {
+
+  .about-wrapper {
+    width: 75%;
+    line-height: 1.5rem;
+  }
+}
+
+/*=== CONACT ===*/
+
+.contact-wrapper {
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem auto 0;
+  border: solid 1px white;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, .7);
+}
+
+@media (min-width: 682px) {
+
+  .contact-wrapper {
+    width: 40%;
+  }
+}
+
+li {
+  display: inline-block;
+  margin: 1rem 1rem 0;
+  filter: drop-shadow(10px 10px 3px black);
+}
+
+.fa-envelope:hover,
+.fa-facebook-square:hover {
+  color: #455eff;
+  transition: 0.9s;
+  transform: rotateY(360deg);
+}
+
+.fa-instagram:hover {
+  color: #ff69a5;
+  transition: 0.9s;
+  transform: rotateY(360deg);
+}
